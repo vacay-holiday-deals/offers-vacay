@@ -26,3 +26,10 @@ This command will run you application in debug mode.
 ### Using wsgi server
 
 For this the wsgi server of choice is gunicorn. To run gunicorn, you only need to call gunicorn and specify the application. Example `gunicorn run:app`, run is our application server script and app is the gunicorn app. So you are setting our app as gunicorn app
+
+### Using a script file to run the up
+
+In order to use this just write a create a script file `start.sh` in the root directory and add the command that run the application. For example using flask run method the script file will be as follows
+`export FLASK_APP=myapp export FLASK_ENV='development' flask run --host=0.0.0.0 --port='you dev server port'`
+
+To make the `.sh` file executable in terminal run the following command `chmod a+rx <myscript.sh>`
