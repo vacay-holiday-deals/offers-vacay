@@ -1,0 +1,133 @@
+.Form--container {
+  background: var(--light-color);
+  opacity: 0.9;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: flex-start;
+  padding: 0;
+  box-shadow: var(--box-shadow-1);
+}
+form {
+  padding: 30px;
+}
+h4 {
+  font-size: 1.2rem;
+  font-family: var(--primary-font);
+}
+
+.form--group {
+  width: 100%;
+  padding: 2px;
+}
+.label {
+  font-family: var(--primary-font);
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.form--control {
+  border-radius: 3px;
+  height: 3.5rem;
+  max-width: 100%;
+  background: var(--white-color);
+  font-family: var(--primary-font);
+  border: 0.5px solid #eee;
+  box-shadow: var(--box-shadow-2);
+  padding-left: 20px;
+
+  &:focus {
+    outline: none !important;
+  }
+
+  &::placeholder {
+    font-family: var(--primary-font);
+    color: #9c9c9c;
+  }
+}
+option::placeholder {
+  font-family: var(--primary-font);
+  color: #9c9c9c;
+}
+.textarea {
+  min-height: 12rem;
+
+  font-size: 0.9rem;
+  background: var(--white-color);
+  font-family: var(--primary-font);
+  border-radius: 2px;
+  border: none;
+  box-shadow: var(--box-shadow-2);
+
+  &:focus {
+    outline-color: transparent !important;
+    border: none;
+  }
+
+  &::placeholder {
+    font-family: var(--primary-font);
+    color: #9c9c9c;
+    font-family: var(--primary-font);
+    font-size: 0.9rem;
+  }
+}
+.form--btn {
+  height: 5rem !important;
+  background: var(--primary-color);
+  border-radius: 0 0 5px 5px;
+  font-family: var(--primary-font);
+  font-weight: 700;
+  box-shadow: var(--box-shadow);
+  font-size: 1.2rem;
+  width: 100%;
+
+  & > .loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 700px) {
+  .Form--container {
+    opacity: 1;
+    width: 96%;
+    margin: 0 2%;
+  }
+  form {
+    padding: 20px;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+    font-family: var(--primary-font);
+  }
+  .label {
+    font-size: 0.9rem;
+  }
+  .form--group {
+    padding: 0;
+  }
+
+  .form--control {
+    height: 3.5rem;
+    &::placeholder {
+      font-size: 0.9rem;
+    }
+  }
+  .textarea {
+    min-height: 9rem;
+    font-size: 0.8rem;
+    font-size: 0.9rem;
+    &::placeholder {
+      font-size: 0.9rem;
+    }
+  }
+  .form--btn {
+    height: 3.6rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+  }
+}

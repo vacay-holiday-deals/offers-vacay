@@ -1,0 +1,79 @@
+.header {
+  height: 10vh;
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.5px solid var(--secondary-grey);
+  background: var(--white-color);
+
+  &--logo {
+    padding: 0 10px;
+
+    & > img {
+      height: 40px;
+      width: 90px;
+    }
+  }
+
+  &--button {
+    padding: 0 15px;
+
+    & > .btn {
+      padding: 10px 20px;
+      background: var(--primary--color-light);
+      color: var(--white-color);
+      font-size: 0.9rem;
+      border-radius: 5px;
+      font-weight: 600;
+      box-shadow: var(--box-shadow-1);
+    }
+  }
+}
+
+// creating a media query to handle the responsiveness of the page
+@media only screen and (min-width: 320px) and (max-width: 700px) {
+  .header {
+    height: 7vh;
+    padding: 3px;
+
+    &--logo {
+      padding: 0 10px;
+
+      & > img {
+        height: 30px;
+        width: 60px;
+      }
+    }
+
+    &--button {
+      & > .btn {
+        padding: 10px 10px;
+        height: 2.5rem;
+        font-size: 0.7rem;
+        border-radius: 3px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1024px) {
+  .header {
+    height: 7vh;
+    &--logo {
+      & > img {
+        height: 20px;
+        width: 60px;
+      }
+    }
+    &--button {
+      & > .btn {
+        padding: 5px 5px;
+        height: 2rem;
+        font-size: 0.7rem;
+        border-radius: 3px;
+      }
+    }
+  }
+}

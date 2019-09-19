@@ -1,0 +1,47 @@
+.addoffers--container {
+  display: flex;
+  justify-content: flex-start;
+  height: 100vh;
+  width: 100%;
+
+  & > .offers--wrapper {
+    padding: 30px;
+    width: 100%;
+    height: auto;
+    overflow: auto;
+
+    & > .form--content {
+      border: 1px solid #eee;
+      border-radius: 5px;
+      width: 80%;
+      margin: 0 10%;
+
+      & > .offers--form {
+        padding: 30px;
+
+        & > .form--group {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+          flex-direction: column;
+          width: 100%;
+          margin-bottom: 0.5rem;
+
+          & > .form--control {
+            width: 100%;
+            box-shadow: none;
+            border: 0.5px solid #bbbbbb;
+          }
+        }
+      }
+      & > .btn--offer {
+        background: blue;
+        width: 100%;
+        height: 5.5rem;
+        color: var(--white-color);
+        border-radius: 0 0 5px 5px;
+        border: 0.5px solid #eee;
+      }
+    }
+  }
+}

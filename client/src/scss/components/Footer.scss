@@ -1,0 +1,132 @@
+.footer {
+  background: var(--dark-color);
+  height: 60vh;
+  color: var(--light-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  &--container {
+    width: 60%;
+    height: auto;
+    margin: 0 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &--contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  &--resources {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  &--links {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  &--social {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  &--header {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .cards {
+    height: 70%;
+    width: 15rem;
+    padding: 5px;
+    margin: 0 5px;
+  }
+  .items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .link--items {
+    font-size: 0.8rem;
+    margin-bottom: 15px;
+    color: var(--primary-grey);
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  span {
+    margin: 0 10px;
+  }
+  .icon {
+    color: var(--accent-color);
+    font-size: 0.85rem;
+  }
+  .hr {
+    width: 100%;
+    border: var(--primary-grey) 0.5px solid;
+    opacity: 0.09;
+  }
+  &--copyright {
+    width: 80%;
+    text-align: center;
+    padding: 20px;
+  }
+  .link {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    color: var(--primary-grey);
+  }
+}
+
+// media queries for a responsive design
+
+// Portrait mode (phone)
+@media only screen and (min-width: 320px) and (max-width: 700px) {
+  .footer {
+    height: auto;
+    &--container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin: 0;
+      width: 100%;
+      grid-gap: 2px;
+      height: auto;
+      padding-left: 5rem;
+    }
+    &--header {
+      font-size: 1rem;
+    }
+
+    .cards {
+      width: 12rem;
+    }
+    .link--items {
+      font-size: 0.8rem;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    &--copyright {
+      width: 100%;
+    }
+  }
+}
+@media only screen and (min-width: 700px) and (max-width: 1024px) {
+  .footer {
+    height: auto;
+    &--container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 5px;
+      padding-left: 5rem;
+      height: auto;
+    }
+  }
+}

@@ -1,0 +1,75 @@
+.top-bar {
+  background: var(--dark-color);
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+
+  &--contact {
+    color: var(--light-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+
+    &-info {
+      margin: 0 15px;
+      font-size: 0.7rem;
+      color: var(--light-color);
+      &:hover {
+        color: var(--primary-grey);
+      }
+    }
+    .contact-links {
+      margin: 0 15px;
+      font-family: var(--primary-font);
+      letter-spacing: 0.5px;
+    }
+  }
+
+  &--social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+
+    &-links {
+      margin: 0 15px;
+      font-size: 0.8rem;
+      color: var(--light-color);
+    }
+  }
+
+  .icon {
+    color: var(--accent-color);
+    font-size: 15px;
+  }
+}
+
+// creating a media query to handle the responsiveness of the page
+@media only screen and (min-width: 320px) and (max-width: 700px) {
+  .top-bar {
+    height: 2rem;
+    span.contact-links {
+      display: none;
+    }
+
+    .icon {
+      font-size: 0.85rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1024px) {
+  .top-bar {
+    span.contact-links {
+      display: none;
+    }
+
+    .icon {
+      font-size: 0.9rem;
+    }
+  }
+}

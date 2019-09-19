@@ -1,0 +1,35 @@
+.carousel--main {
+  max-height: 80vh;
+  height: 100%;
+  width: 75vw;
+  margin: 0 12.5vw;
+
+  &-item {
+    height: 80vh;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+  &-img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 700px) {
+  .carousel--main {
+    width: 100vw;
+    height: 100%;
+    margin: 0;
+    &-item {
+      height: 40vh;
+      width: 100%;
+      object-fit: contain;
+      object-position: center;
+    }
+    &-img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

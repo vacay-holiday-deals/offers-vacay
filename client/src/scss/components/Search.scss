@@ -1,0 +1,26 @@
+.search {
+  width: 80%;
+  padding: 0;
+
+  & > .search--input {
+    width: 100%;
+    height: 6rem;
+    border-radius: 3px;
+    border: none;
+    background: #eeeeee;
+    font-size: 3rem;
+    padding: 20px;
+    color: #a0a0a0;
+    font-family: var(--primary-font);
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      font-size: 3rem;
+      color: #bebebe;
+      font-family: var(--primary-font);
+    }
+  }
+}

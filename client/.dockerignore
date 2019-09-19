@@ -1,0 +1,5 @@
+# what should docker ignore
+node_modules
+.gitignore
+.prettierignore
+README.md

@@ -1,0 +1,31 @@
+:root {
+  --prmary--heading-font: 'Fira Sans ';
+  --primary-font: 'Poppins';
+  --secondary-heading-font: 'Noto Sans HK';
+  --secondary-font: 'Muli';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--prmary--heading-font) sans-serif;
+  font-weight: 500;
+}
+
+p {
+  font-family: var(--primary-font), var(--secondary-font), sans-serif;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  font-family: var(--primary-font), var(--secondary-font), sans-serif;
+  font-weight: 400;
+
+  &:hover {
+    text-decoration: none;
+  }
+}

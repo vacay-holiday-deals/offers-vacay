@@ -1,0 +1,73 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://0.0.0.0:5000",
+  "engines": {
+    "node": "10.16.0",
+    "npm": "6.9.0"
+  },
+  "dependencies": {
+    "@ckeditor/ckeditor5-build-classic": "^12.4.0",
+    "@ckeditor/ckeditor5-react": "^1.1.3",
+    "@fortawesome/fontawesome-svg-core": "^1.2.18",
+    "@fortawesome/free-brands-svg-icons": "^5.8.2",
+    "@fortawesome/free-regular-svg-icons": "^5.8.2",
+    "@fortawesome/free-solid-svg-icons": "^5.8.2",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "axios": "^0.19.0",
+    "bootstrap": "^4.3.1",
+    "cors": "^2.8.5",
+    "country-telephone-data": "^0.6.0",
+    "date-fns": "^1.30.1",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "history": "^4.9.0",
+    "html-react-parser": "^0.9.1",
+    "jquery": "^3.4.1",
+    "jwt-decode": "^2.2.0",
+    "node-sass": "^4.12.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-alert": "^5.5.0",
+    "react-alert-template-basic": "^1.0.0",
+    "react-bootstrap": "^1.0.0-beta.9",
+    "react-dom": "^16.8.6",
+    "react-dropzone": "^10.1.8",
+    "react-facebook-pixel": "^0.1.3",
+    "react-ga": "^2.6.0",
+    "react-gtm-module": "^2.0.8",
+    "react-lazy-load-image-component": "^1.3.2",
+    "react-loader-spinner": "^2.3.0",
+    "react-private-route": "^1.1.2",
+    "react-router": "^5.0.1",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.0.1",
+    "react-transition-group": "^2.9.0",
+    "uuid": "^3.3.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "serve": "serve -s build",
+    "dev": "nodemon server"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,32 @@
+@keyframes linkAnimation {
+  0% {
+    background: var(--light-color);
+    background-position: left center;
+    color: var(--color-primary);
+  }
+  50% {
+    background: lighten(#ffd416, 20%);
+    background-position: left center;
+    color: var(--light-color);
+  }
+  100% {
+    background: var(--light-color);
+    background-position: left center;
+    color: var(--color-primary);
+  }
+}
+@keyframes linkAnimation1 {
+  0% {
+    background: var(--white-color);
+    background-position: left center;
+    color: var(--color-primary);
+  }
+  50% {
+    background-position: left center;
+  }
+  100% {
+    background: var(--white-color);
+    background-position: left center;
+    color: var(--color-primary);
+  }
+}
